@@ -1,0 +1,41 @@
+.contact {
+  @extend .container;
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+  margin-top: 60px;
+  padding-bottom: 100px;
+}
+
+.left-section {
+  &__heading {
+    padding-top: 21px;
+    @include text(40px, 400, $main-color, 39px);
+    @include font-family("secondary");
+  }
+
+  &__text {
+    padding-top: 29px;
+    @include text(18px, 300, $main-color, 26px);
+    @include font-family("main");
+  }
+}
+
+.form__item {
+  padding-bottom: 40px;
+}
+
+.form__item input {
+  width: 470px;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid rgba(38, 42, 63, 0.5);
+  font-style: italic;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 20px;
+  font-family: $font-secondary;
+  opacity: 50%;
+  padding: 15px 0 10px;
+  outline: none;
+}

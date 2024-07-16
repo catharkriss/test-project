@@ -1,0 +1,50 @@
+.promises {
+  @extend .container;
+  &__container {
+    position: relative;
+    width: 100%;
+  }
+  padding-bottom: 120px;
+}
+
+.promises__feautures {
+  width: 770px;
+  height: 400px;
+  display: flex;
+  align-items: center;
+  position: absolute;
+  left: 70%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.promises__list {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 15px;
+  flex-wrap: wrap;
+  background-color: rgba(255, 255, 255, 0.908);
+  padding-top: 70px;
+  padding-bottom: 75px;
+}
+
+.list-item {
+  display: inline-block;
+  width: 300px;
+  text-decoration: none;
+}
+
+.feature__heading {
+  @include text(24px, 400, $main-color, 48px);
+  @include font-family("secondary");
+}
+
+.feature__text {
+  @include text(18px, 300, $main-color, 26px);
+  @include font-family("main");
+}
+
+.feature__text--extra {
+  padding-bottom: 75px;
+}

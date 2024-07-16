@@ -1,0 +1,41 @@
+.benefits {
+  @extend .container;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 30px;
+  padding-bottom: 120px;
+}
+
+.benefits-divider {
+  width: 570px;
+  height: 1px;
+  background-color: rgba(228, 228, 228, 1);
+  margin: 0 auto;
+}
+
+.benefits__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.benefit__item {
+  width: 570px;
+  padding: 20px 35px;
+}
+
+.item__heading {
+  padding-top: 50px;
+  padding-bottom: 30px;
+  @include text(40px, 400, $main-color, 48px);
+  @include font-family("secondary");
+}
+
+.item__text {
+  text-align: left;
+  @include text(18px, 300, $main-color, 26px);
+  @include font-family("main");
+}
