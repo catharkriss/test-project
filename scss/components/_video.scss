@@ -1,0 +1,43 @@
+.video {
+  position: relative;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 120px;
+
+  &__heading {
+    padding-top: 50px;
+    @include text(40px, 400, $main-color, 48px);
+    @include font-family("secondary");
+  }
+
+  &__text {
+    padding-top: 20px;
+    @include text(18px, 300, $main-color, 26px);
+    @include font-family("main");
+  }
+}
+
+.video__desc {
+  text-align: left;
+  margin-left: 270px;
+}
+
+.img-video {
+  position: absolute;
+  left: 49%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+  // padding: 0.5rem;
+}
+
+.img-icon {
+  position: absolute;
+  left: 49%;
+  top: 34%;
+  transform: translate(-50%, -50%);
+}
+
+.video-icon:hover {
+  width: 150px;
+  height: 150px;
+}

@@ -1,0 +1,19 @@
+.hero {
+  @extend .container;
+
+  &__wrapper {
+    max-width: 525px;
+    width: 100%;
+  }
+  &__title {
+    @include text(44px, 400, $main-color, 52px);
+    @include font-family("secondary");
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    @include text(18px, 300, $main-color, 26px);
+    @include font-family("main");
+    padding-bottom: 50px;
+  }
+}

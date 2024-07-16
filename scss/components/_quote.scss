@@ -1,0 +1,35 @@
+.quote {
+  padding-bottom: 120px;
+  &__container {
+    position: relative;
+    width: 100%;
+    text-align: center;
+  }
+
+  &__icon {
+    position: absolute;
+    top: 18%;
+    left: 21%;
+  }
+
+  &__text {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    padding: 0.5rem;
+    text-align: left;
+  }
+}
+
+.text__upper-part {
+  @include text(32px, 400, $secondary-color, 46px);
+  @include font-family("main");
+  padding-bottom: 40px;
+}
+
+.text__lower-part {
+  font-style: italic;
+  @include text(20px, 400, $secondary-color, 20px);
+  @include font-family("secondary");
+}

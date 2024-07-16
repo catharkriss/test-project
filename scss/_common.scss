@@ -8,7 +8,8 @@
   }
 }
 
-button {
+button,
+a {
   cursor: pointer;
 }
 
@@ -17,4 +18,36 @@ input,
 select,
 textarea {
   font-family: inherit;
+  outline: none;
+  border: none;
+  background: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+.text--attribute {
+  font-style: italic;
+  color: #8bbab1;
+}
+
+.text--opacity {
+  opacity: 0.1;
+  font-size: 40px;
+}
+
+.section--divider {
+  width: 1170px;
+  height: 1px;
+  background-color: rgba(228, 228, 228, 1);
+  margin: 0 auto;
+}
+
+
+body {
+    background-image: url(../assets/first-image.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+

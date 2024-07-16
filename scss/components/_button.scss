@@ -1,0 +1,19 @@
+.button {
+  text-transform: uppercase;
+  color: #f1897b;
+
+  @include text(20px, 700, #f1897b, 20px);
+  @include font-family("main");
+}
+
+.feature__button {
+  border: 1px solid rgba(228, 228, 228, 1);
+  padding: 16px 36px;
+}
+
+.button:hover {
+  color: $hover-color;
+  border: 1px solid $hover-color;
+  padding: 16px 36px;
+  transition: 0.2s ease-in;
+}

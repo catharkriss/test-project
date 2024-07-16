@@ -1,0 +1,25 @@
+.footer {
+  @extend .container;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 86px;
+}
+
+.footer__list-item {
+  display: inline-block;
+  list-style: none;
+}
+
+.item__text {
+  @include text(14px, 400, rgba(38, 42, 63, 0.6), 26px);
+  @include font-family("main");
+}
+
+.item-agreement {
+  padding-right: 32px;
+}
+
+.text--color {
+  color: rgba(38, 42, 63, 1);
+}

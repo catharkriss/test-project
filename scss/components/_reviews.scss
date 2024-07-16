@@ -1,0 +1,57 @@
+.reviews {
+  @extend .container;
+
+  padding-bottom: 100px;
+
+  &__heading {
+    @include text(40px, 400, $main-color, 48px);
+    @include font-family("secondary");
+    padding-bottom: 20px;
+  }
+
+  &__text {
+    @include text(18px, 300, $main-color, 26px);
+    @include font-family("main");
+    padding-bottom: 50px;
+  }
+}
+
+.client-review {
+  position: relative;
+  width: 100%;
+  text-align: center;
+}
+
+.reviews__container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.review {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 0.5rem;
+  width: 370px;
+  text-align: left;
+  width: 290px;
+
+  &__text {
+    @include text(16px, 400, rgba(255, 255, 255, 0.777), 26px);
+    @include font-family("main");
+    padding-bottom: 26px;
+  }
+
+  &__text-low {
+    font-style: italic;
+    @include text(20px, 400, $secondary-color, 20px);
+    @include font-family("secondary");
+  }
+}
+
+.review__photo {
+  filter: brightness(60%);
+}
